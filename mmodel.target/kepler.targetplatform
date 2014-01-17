@@ -1,0 +1,23 @@
+target "kepler"
+
+// Eclipse release
+location "http://download.eclipse.org/releases/kepler" {
+        with source, requirements
+        org.eclipse.emf.ecore
+        org.eclipse.emf.ecore.feature.group
+        org.eclipse.emf.codegen.ecore.feature.group
+        org.eclipse.ocl.feature.group
+        org.eclipse.platform.feature.group
+        org.eclipse.sdk.feature.group
+        org.eclipse.emf.sdk.feature.group
+        org.eclipse.epp.mpc.feature.group
+        org.eclipse.equinox.executable.feature.group
+}
+
+
+// Acceleo 3
+location "http://download.eclipse.org/modeling/m2t/acceleo/updates/releases/3.2" {
+        with source, requirements
+        org.eclipse.acceleo.feature.group
+        org.eclipse.acceleo.runtime.feature.group
+}

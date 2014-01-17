@@ -1,0 +1,8 @@
+[comment encoding = UTF-8 /]
+[module generator('http://mmodela')]
+
+
+[template public gen(item : Item)]mmodel.a.gen[/template]
+
+[query public callQuery(item : Item) : String = 'mmodel.a.gen' /]
+
