@@ -46,6 +46,7 @@
 					<packagesToRegister>
 						<packageToRegister>mmodela.MmodelaPackage</packageToRegister>
 					</packagesToRegister>
+					<uriHandler>org.eclipse.acceleo.maven.AcceleoURIHandler</uriHandler>
 				</configuration>
 			</plugin>
 		</plugins>

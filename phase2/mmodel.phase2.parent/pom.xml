@@ -28,22 +28,21 @@
 		<!-- update sites -->
 		<module>../mmodel.phase2.update</module>
 	</modules>
-
 	<repositories>
 		<repository>
-			<id>Indigo Release</id>
-			<url>http://www.obeo.fr/download/acceleo/maven/releases/indigo</url>
+			<id>Acceleo3 Indigo Release</id>
+			<url>https://raw.github.com/eclipse/acceleo/master/maven/repository/releases/indigo</url>
 		</repository>
 		<repository>
-	      <id>phase1</id>
-	      <layout>p2</layout>
-	      <url>file://${basedir}/../../phase1/mmodel.phase1.update/target/repository</url>
-	    </repository>
+			<id>phase1</id>
+			<layout>p2</layout>
+			<url>file://${basedir}/../../phase1/mmodel.phase1.update/target/repository</url>
+		</repository>
 	</repositories>
 	<pluginRepositories>
 		<pluginRepository>
-			<id>Indigo Release</id>
-			<url>http://www.obeo.fr/download/acceleo/maven/releases/indigo</url>
+			<id>Acceleo3 Indigo Release</id>
+			<url>https://raw.github.com/eclipse/acceleo/master/maven/repository/releases/indigo</url>
 		</pluginRepository>
 	</pluginRepositories>
 	<dependencies>

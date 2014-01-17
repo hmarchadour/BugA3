@@ -31,14 +31,14 @@
 
 	<repositories>
 		<repository>
-			<id>Indigo Release</id>
-			<url>http://www.obeo.fr/download/acceleo/maven/releases/indigo</url>
+			<id>Acceleo3 Indigo Release</id>
+			<url>https://raw.github.com/eclipse/acceleo/master/maven/repository/releases/indigo</url>
 		</repository>
 	</repositories>
 	<pluginRepositories>
 		<pluginRepository>
-			<id>Indigo Release</id>
-			<url>http://www.obeo.fr/download/acceleo/maven/releases/indigo</url>
+			<id>Acceleo3 Indigo Release</id>
+			<url>https://raw.github.com/eclipse/acceleo/master/maven/repository/releases/indigo</url>
 		</pluginRepository>
 	</pluginRepositories>
 	<dependencies>
