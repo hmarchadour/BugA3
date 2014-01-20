@@ -39,9 +39,6 @@
 								<output>target/classes</output>
 							</entry>
 						</entries>
-						<jars>
-							<jar>p2.eclipse-plugin:mmodel.a</jar>
-						</jars>
 					</acceleoProject>
 					<packagesToRegister>
 						<packageToRegister>mmodela.MmodelaPackage</packageToRegister>
