@@ -40,9 +40,7 @@
 							</entry>
 						</entries>
 						<jars>
-							<jar>p2.eclipse-plugin:mmodel.a</jar>
 							<jar>p2.eclipse-plugin:mmodel.a.gen</jar>
-							<jar>p2.eclipse-plugin:mmodel.b</jar>
 						</jars>
 					</acceleoProject>
 					<packagesToRegister>
