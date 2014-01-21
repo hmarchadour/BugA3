@@ -2,7 +2,11 @@
 [module generator('http://mmodela')]
 
 
-[template public gen(item : Item)]mmodel.a.gen[/template]
+[template public gen(item : Item)]mmodel.a.gen
+ Class [item/] extends generator2
+          {
+}
+[/template]
 
 [query public callQuery(item : Item) : String = 'mmodel.a.gen' /]
 

@@ -23,6 +23,7 @@
 		<!-- plugins -->
 		<module>../mmodel.b</module>
 		<module>../mmodel.b.gen</module>
+		<module>../mmodel.b2.gen</module>
 		<!-- features -->
 		<module>../mmodel.b.feature</module>
 		<!-- update sites -->

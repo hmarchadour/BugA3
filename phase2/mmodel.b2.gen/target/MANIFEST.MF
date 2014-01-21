@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Require-Bundle: org.eclipse.core.runtime,org.eclipse.emf.ecore,org.ecl
+ ipse.emf.ecore,org.eclipse.emf.ecore.xmi,org.eclipse.ocl,org.eclipse.
+ ocl.ecore,org.eclipse.acceleo.common;bundle-version="3.0.0",org.eclip
+ se.acceleo.model;bundle-version="3.0.0",org.eclipse.acceleo.profiler;
+ bundle-version="3.0.0",org.eclipse.acceleo.engine;bundle-version="3.0
+ .0",com.google.guava,mmodel.a.gen;bundle-version="1.0.0",mmodel.b.gen
+ ;bundle-version="1.0.0",mmodel.a;bundle-version="1.0.0",mmodel.b;bund
+ le-version="1.0.0"
+Bundle-Vendor: Eclipse Modeling Project
+Eclipse-LazyStart: true
+Bundle-ActivationPolicy: lazy
+Bundle-Version: 1.0.0.201401211916
+Bundle-Name: Acceleo Gen Module Runtime Plug-in
+Bundle-Activator: mmodelb2.gen.ActivatorB2
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: mmodel.b2.gen
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+
