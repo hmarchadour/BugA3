@@ -12,12 +12,28 @@
 	<artifactId>mmodel.phase1.parent</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
-
+	
 	<properties>
 		<tycho-version>0.19.0</tycho-version>
 		<tycho-extras-version>0.19.0</tycho-extras-version>
 		<platform-version-name>kepler</platform-version-name>
+		<acceleo3-maven-version>3.5.0-SNAPSHOT</acceleo3-maven-version>
+		<acceleo3-maven-artifact-id>org.eclipse.acceleo.maven</acceleo3-maven-artifact-id>
+		<acceleo3-maven-repo-snap>https://repo.eclipse.org/content/repositories/acceleo-snapshots</acceleo3-maven-repo-snap>
+		<acceleo3-maven-repo-rel>https://repo.eclipse.org/content/repositories/acceleo-releases</acceleo3-maven-repo-rel>
 	</properties>
+	
+	<profiles>
+		<profile>
+			 <id>legacy</id>
+			 <properties>
+			 	<acceleo3-maven-version>3.2.1</acceleo3-maven-version>
+			 	<acceleo3-maven-artifact-id>maven</acceleo3-maven-artifact-id>
+				<acceleo3-maven-repo-snap>http://www.obeo.fr/download/acceleo/maven/snapshots/indigo</acceleo3-maven-repo-snap>
+				<acceleo3-maven-repo-rel>http://www.obeo.fr/download/acceleo/maven/releases/indigo</acceleo3-maven-repo-rel>
+			 </properties>
+		</profile>
+	</profiles>
 
 	<modules>
 		<!-- plugins -->
@@ -32,30 +48,30 @@
 	<repositories>
     	<repository>
     		<id>Eclipse - Acceleo Snapshots</id>
-    		<url>https://repo.eclipse.org/content/repositories/acceleo-snapshots</url>
+    		<url>${acceleo3-maven-repo-snap}</url>
     	</repository>
 		<repository>
     		<id>Eclipse - Acceleo Release</id>
-    		<url>https://repo.eclipse.org/content/repositories/acceleo-releases</url>
+    		<url>${acceleo3-maven-repo-rel}</url>
     	</repository>
 	</repositories>
 	
 	<pluginRepositories>
     	<pluginRepository>
     		<id>Eclipse - Acceleo Snapshots</id>
-    		<url>https://repo.eclipse.org/content/repositories/acceleo-snapshots</url>
+    		<url>${acceleo3-maven-repo-snap}</url>
     	</pluginRepository>
 		<pluginRepository>
     		<id>Eclipse - Acceleo Release</id>
-    		<url>https://repo.eclipse.org/content/repositories/acceleo-releases</url>
+    		<url>${acceleo3-maven-repo-rel}</url>
     	</pluginRepository>
 	</pluginRepositories>
 	
 	<dependencies>
 		<dependency>
 			<groupId>org.eclipse.acceleo</groupId>
-			<artifactId>org.eclipse.acceleo.maven</artifactId>
-			<version>3.5.0-SNAPSHOT</version>
+			<artifactId>${acceleo3-maven-artifact-id}</artifactId>
+			<version>${acceleo3-maven-version}</version>
 		</dependency>
 	</dependencies>
 	
@@ -114,23 +130,5 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<groupId>org.eclipse.acceleo</groupId>
-					<artifactId>org.eclipse.acceleo.maven</artifactId>
-					<version>3.5.0-SNAPSHOT</version>
-					<executions>
-						<execution>
-							<id>acceleo-compile</id>
-							<phase>compile</phase>
-							<goals>
-								<goal>acceleo-compile</goal>
-							</goals>
-						</execution>
-					</executions>
-				</plugin>
-			</plugins>
-		</pluginManagement>
 	</build>
 </project>
