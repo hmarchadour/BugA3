@@ -41,7 +41,7 @@
 						</entries>
 						<jars>
 							<jar>p2.eclipse-plugin:mmodel.a.gen</jar>
-							<jar>p2.eclipse-plugin:mmodel.b.gen</jar>
+							<jar>mmodel:mmodel.b.gen</jar>
 						</jars>
 					</acceleoProject>
 					<packagesToRegister>
